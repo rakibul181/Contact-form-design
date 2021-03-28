@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form design</title>
+    <style>
+        body{
+            background-color: rgb(247, 199, 158);
+            margin-top: 100px;
+        }
+        td{
+            font-size: 18px;
+            color: rgb(42, 42, 42);
+        }
+        .full{
+            height: 400px;
+            width: 380px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 20px;
+            border-top:25px solid rgb(240, 133, 121);
+            border-left: 5px solid rgb(240, 133, 121);
+            border-bottom: 5px solid rgb(240, 133, 121);
+            border-right: 5px solid rgb(240, 133, 121);
+        }
+        form{
+            padding: 80px;
+
+        }
+        .last{
+            margin-top: 60px;
+            padding: 15px;
+            border: 2px gray dashed;
+            color: rgb(6, 88, 6);
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        span{
+            color: white;
+            background-color: rgb(6, 88, 6);
+            padding: 3px;
+            margin: 1px;
+            border-radius: 40%;
+            
+        }
+        h2{
+            margin-top: -50px;
+            
+        }
+        input{
+            height: 30px;
+            width: 120%;
+        }
+    </style>
+</head>
+<body>
+   <div class="full">
+       <form action="">
+           <h2>A Good Form Title</h3>
+           <table>
+               <tr>
+                   <td> <label for="name"> A Good Question Label</label></td>
+               </tr>
+               <tr>
+                   <td><input type="text" name="name" id="name"></td>
+               </tr>
+               <tr>
+                   <td><label for="another"> Another great one</label></td>
+
+               </tr>
+               <tr>
+                   <td><input type="text" name="another" id="another"></td>
+               </tr>
+           </table>
+           <div class="last">
+               <span>+</span> Add New Question
+           </div>
+       </form>
+   </div> 
+</body>
+</html>

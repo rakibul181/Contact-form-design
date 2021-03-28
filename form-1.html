@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <style>
+        table{
+            margin: 0 auto;
+            width: 550px;
+             
+        }
+        form{
+            margin: 0px auto;
+            height: 400px;
+            width: 550px;
+            padding: 20px;
+
+
+        }
+        fieldset{
+            padding: 20px;
+            margin-top: 50px;
+            
+        }
+        td{
+            padding: 3px 6px;
+        }
+        .submit{
+            color: white;
+            background-color:royalblue;
+            padding: 5px 16px;
+            float: right;
+            border-radius: 20px;
+            border-bottom: 1px white;
+            border-right: 1px white;
+            margin-top: 30px;
+            margin-right: 80px;
+        }
+        #cancel{
+            border: 1px solid royalblue;
+            color: royalblue;
+            padding: 5px 16px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+        .submit:hover{
+            background-color: green;
+        }
+        #cancel:hover{
+            background-color: red;
+            color: white;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Assignment 3</legend>
+            <h4>Personal information</h4>
+            <table>
+                <tr>
+                    <td>  <label for="fname">First Name</label></td>
+                    
+                    <td><label for="lname">Last Name</label></td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname" name="fname" placeholder="Rakibul"></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Hasan"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    
+                    <td> <label for="phone">Phone</label></td>
+                  
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email" placeholder="xyz@mail.com"></td> 
+                    <td><input type="number" id="phone" name="phone" placeholder="eg@01********10"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                   
+                    <td><label for="post">Post Code</label></td>
+                    
+                </tr>
+                <tr>
+                     <td><input type="text" id="city" name="city" placeholder="New York"></td>
+                     <td><input type="number" id="post" name="post" placeholder="1234"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="Cancel" id="cancel"></td>
+                    <td ><input type="button" value="Submit" onclick="alert('The information received succesfully. Thank You')" class="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

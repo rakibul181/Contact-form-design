@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <style>
+        body{
+            background-color: rgb(156, 154, 154);
+            margin-top: 100px;
+            
+        }
+        div.sub{
+            width: 230px;
+            background-color: white;
+            padding-left: 30px;
+            height: 400px;
+            float: left;
+
+        }
+        span{
+            color: red;
+        }
+        .left{
+            border-top: 8px solid green;
+            border-radius: 10px;
+            padding-top:20px;
+        }
+        .right{
+            border-top: 8px solid red;
+            border-radius: 10px;
+            padding-top:20px;
+            position: relative;
+            left: 20px;
+        }
+        .full{
+            width: 540px;
+            height: 450px;
+            margin: 0 auto;
+          
+        }
+        table{
+            padding:13px;
+
+        }
+        caption{
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="left sub ">
+            <form action="">
+                <table>
+                    <caption>Personal information</caption>
+                    <tr>
+                        <td> <label for="fname">First Name <span class="requerd">*</span> </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="fname" name="fname" placeholder="Rakibul" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name<span class="requerd">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lname" name="lname" placeholder="Hasan" required></td>
+                    </tr>
+
+                </table>
+
+                <table>
+                    <caption>Contact information</caption>
+                    <tr>
+                        <td><label for="Address">Address<span class="requerd">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Address" id="Address" required></td>
+                    </tr>                
+                    <tr>
+                        <td><label for="city">City<span class="requerd">*</span></label></td>
+                    </tr>                
+                    <tr>
+                        <td><input type="text" name="city" id="city" required></td>
+                    </tr>                
+                    <tr>
+                        <td><label for="zip">Zip Code</label></td>
+                    </tr>                
+                    <tr>
+                        <td><input type="text" id="zip" name="zip"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="right sub">
+            <form action="">
+                <table>
+                    <tr>
+                        <td> <label for="fname">First Name <span class="requerd">*</span> </label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="fname" name="fname" placeholder="Rakibul" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name<span class="requerd">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lname" name="lname" placeholder="Hasan" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Address">Address<span class="requerd">*</span></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Address" id="Address" required></td>
+                    </tr>                
+                    <tr>
+                        <td><label for="city">City<span class="requerd">*</span></label></td>
+                    </tr>                
+                    <tr>
+                        <td><input type="text" name="city" id="city" required></td>
+                    </tr>                
+                    <tr>
+                        <td><label for="zip">Zip Code</label></td>
+                    </tr>                
+                    <tr>
+                        <td><input type="text" id="zip" name="zip"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
